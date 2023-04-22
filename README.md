@@ -17,7 +17,7 @@ The move ordering function is as explained above near its definition. On an aver
 The EBF is calculated as (node_count)^(1/search_depth) as an approximate solution.
 On multiple runs, i get the Average EBF of with ordering to be lesser than Average EBF with random ordering. This means that my move ordering has come slightly closer to the case with perfect move ordering. Also, in this case the ordering uses the simpler evaluation function. If we used the improved function, the EBF might come out to be lower.
 
-# Comparitive Analysis of A* and B* search
+# Comparative Analysis of A* and B* search
 I did A* and B* search over the romania map given in AIMA. I used the time taken and path cost as a metric to compare between the two search strategies.  I took all possible combinations of start and goal cities and ran both algorithms on it. I used the straight line distance heuristic for the same.
 
 The A* search algorithm evaluates nodes based on two cost functions: the cost to reach the node from the start node (g(n)) and the estimated cost to reach the goal node from the current node (h(n))(heuristic). The total cost of a node is the sum of these two costs (f(n) = g(n) + h(n)). The algorithm then chooses the node with the lowest f-value as the next node to expand.
